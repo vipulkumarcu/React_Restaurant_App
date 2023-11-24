@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/React_Restaurant_App/static/css/main.c951d146.css",
-    "main.js": "/React_Restaurant_App/static/js/main.c70eb15b.js",
+    "main.css": "/React_Restaurant_App/static/css/main.e719c93e.css",
+    "main.js": "/React_Restaurant_App/static/js/main.a9692201.js",
     "static/media/header-image.jpg": "/React_Restaurant_App/static/media/header-image.2a56832006514c3080ba.jpg",
     "index.html": "/React_Restaurant_App/index.html",
-    "main.c951d146.css.map": "/React_Restaurant_App/static/css/main.c951d146.css.map",
-    "main.c70eb15b.js.map": "/React_Restaurant_App/static/js/main.c70eb15b.js.map"
+    "main.e719c93e.css.map": "/React_Restaurant_App/static/css/main.e719c93e.css.map",
+    "main.a9692201.js.map": "/React_Restaurant_App/static/js/main.a9692201.js.map"
   },
   "entrypoints": [
-    "static/css/main.c951d146.css",
-    "static/js/main.c70eb15b.js"
+    "static/css/main.e719c93e.css",
+    "static/js/main.a9692201.js"
   ]
 }

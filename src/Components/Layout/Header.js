@@ -5,9 +5,10 @@ import meals from "../../Assets/meals.jpg"
 function Header ( props )
 {
   return (
-    <section>
+    <>
 
       <header className = { classes[ "header" ] }>
+        <h1> React Meals </h1>
         <HeaderCartButton />
       </header>
 
@@ -15,7 +16,7 @@ function Header ( props )
         <img src = { meals } alt = "Delicious Meals !!" />
       </div>
   
-    </section>
+    </>
     
   )
 }

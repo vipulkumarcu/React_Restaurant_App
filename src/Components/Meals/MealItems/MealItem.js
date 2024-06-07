@@ -1,4 +1,5 @@
 import classes from "./MealItem.module.css";
+import MealItemForm from "./MealItemForm";
 
 function MealItem ( { id, name, description, price } )
 {
@@ -12,7 +13,7 @@ function MealItem ( { id, name, description, price } )
       </div>
 
       <div>
-
+        <MealItemForm id = { id } />
       </div>
 
     </li>

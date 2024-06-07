@@ -25,8 +25,8 @@ function MealItemForm ( props )
         }
       />
 
-      <button type = "submit"> Add+ </button>
-      
+      <button type = "submit"> +Add </button>
+
     </form>
   )
 }

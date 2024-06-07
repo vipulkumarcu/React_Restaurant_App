@@ -32,18 +32,18 @@ const DUMMY_MEALS = [
 function AvailableMeals ( props )
 {
   return (
-    <div className = { classes[ "meals" ] }>
-
+    <section className = { classes[ "meals" ] }>
+      <Card>
       <ul>
-        { DUMMY_MEALS.map ( ( meal ) => ( 
-          <li key = { meal.id }>
-            <Card>
-              <MealItem name = { meal.name } description = { meal.description } price = { meal.price } />
-            </Card>
-          </li> ) ) }
+        {
+          DUMMY_MEALS.map ( ( meal ) => ( 
+              <MealItem id = { meal.id } name = { meal.name } description = { meal.description } price = { meal.price } />
+            )
+          )
+        }
       </ul>
-      
-    </div>
+      </Card>
+    </section>
   )
 }
 

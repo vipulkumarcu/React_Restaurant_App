@@ -1,24 +1,23 @@
+import { useContext } from "react";
 import Modal from "../UI/Modal";
 import classes from "./Cart.module.css";
+import CartContext from "../../Store/cart-context";
+import CartItemList from "./CartItemList";
 
 function Cart ( props )
 {
-  const cartItems = (
-    <ul className = { classes["cart-items"] }>
-    {
-      [ { id: "c1", name: "Sushi", amount: "2", price: "12.99" } ].map ( ( item ) => ( <li> { item.name } </li> ) )
-    }
-    </ul>
-  );
+  const context = useContext ( CartContext );
+
+  const totalPrice = context.totalPrice.toFixed(2);
 
   return (
     <Modal onShowCart = { props.onShowCart }>
 
-      { cartItems }
+      <CartItemList />
 
-      <div className = { classes["total"] }>
-        <span> Total Price </span>
-        <span> 35.62 </span>
+      <div className = { classes["total"] } >
+        <span> Total Price: </span>
+        <span> $ { totalPrice } </span>
       </div>
 
       <div className = { classes["actions"] }>

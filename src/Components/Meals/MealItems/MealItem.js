@@ -13,7 +13,7 @@ function MealItem ( { id, name, description, price } )
       </div>
 
       <div>
-        <MealItemForm id = { id } />
+        <MealItemForm id = { id } name = { name } price = { price } />
       </div>
 
     </li>

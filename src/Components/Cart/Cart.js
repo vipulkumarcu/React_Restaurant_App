@@ -12,7 +12,7 @@ function Cart ( props )
   );
 
   return (
-    <Modal>
+    <Modal onShowCart = { props.onShowCart }>
 
       { cartItems }
 
@@ -22,7 +22,7 @@ function Cart ( props )
       </div>
 
       <div className = { classes["actions"] }>
-        <button className = { classes["button--alt"] }> Close </button>
+        <button className = { classes["button--alt"] } onClick = { props.onShowCart }> Close </button>
         <button className = { classes["button"] }> Order </button>
       </div>
 

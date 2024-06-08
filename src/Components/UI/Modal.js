@@ -4,7 +4,7 @@ import classes from "./Modal.module.css";
 function Backdrop ( props )
 {
   return (
-    <div className = { classes["backdrop"] } />
+    <div className = { classes["backdrop"] } onClick = { props.onClick } />
   )
 }
 
@@ -23,7 +23,7 @@ function Modal ( props )
 {
   return (
     <>
-      { ReactDOM.createPortal ( <Backdrop />, portal ) }
+      { ReactDOM.createPortal ( <Backdrop onClick = { props.onShowCart } />, portal ) }
       { ReactDOM.createPortal ( <ModalOverlay> { props.children } </ModalOverlay>, portal ) }
     </>
   )
